@@ -6,25 +6,18 @@ import './globals.css';
 import Header from '@/components/layout/header';
 import { Providers } from '@/lib/providers';
 import Footer from '@/components/layout/footer';
+import { SITE_METADATA } from '@/lib/data';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const title = 'Om Ahir | Full Stack Developer From Pune, India.';
-const description =
-  'A self-proclaimed designer who specializes in full stack development (Vue.js & Node.js), from Pune, India.';
-const url = 'https://omahir.dev';
+const { title, description, url, keywords, creator } = SITE_METADATA;
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
   title,
   description,
-  keywords: [
-    'Frontend Developer',
-    'Full Stack Developer',
-    'React Developer',
-    'Next.js Developer',
-  ],
-  creator: 'Om Ahir',
+  keywords,
+  creator,
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },

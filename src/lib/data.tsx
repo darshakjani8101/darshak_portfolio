@@ -24,261 +24,330 @@ import LogoPersistentLight from '/public/images/logos/logo-persistent-light.svg'
 import LogoTerraformLight from '/public/images/logos/icon-terraform-light.svg';
 import LogoTerraformDark from '/public/images/logos/icon-terraform-dark.svg';
 
-
 import EST from '/public/images/logos/cisco-est.png';
 import U from '/public/images/logos/cisco-u.png';
 
-
+import headShot from '/public/images/front-pic.jpg';
 
 import {
-  ExperienceDetails,
-  ProjectDetails,
-  TechDetails,
-  TestimonialDetails,
+    ExperienceDetails,
+    ProjectDetails,
+    TechDetails,
+    TestimonialDetails,
 } from '@/lib/types';
 
+export const LOGO_TEXT = '<DJ />';
+
+export const SITE_METADATA = {
+    title: 'Darshak Jani | Full Stack Developer From Pune, India.',
+    description: 'A self-proclaimed designer who specializes in full stack development (Vue.js & Node.js), from Pune, India.',
+    url: 'https://omahir.dev',
+    keywords: [
+        'Frontend Developer',
+        'Full Stack Developer',
+        'React Developer',
+        'Next.js Developer',
+    ],
+    creator: 'Darshak Jani',
+};
+
+export const FILE_URLS = {
+    resume: 'files/Darshak-Jani-Resume.pdf',
+    headShot: headShot,
+};
+
+export const HERO_CONTENT = {
+    heading: "Hi, I'm Darshak",
+    bio: [
+        {
+            // For text with no links, the text should be in format of array of text segments.
+            // Even segments will be normal text and odd segments will be highlighted text.
+            // This is to make sure that we can style the highlighted text differently from the rest of the text.
+            text: [
+                "AI Cloud Full-Stack Engineer with ",
+                "3.6+ years",
+                " of experience building secure, scalable applications at the intersection of ",
+                "full-stack development",
+                " and ",
+                "cloud infrastructure",
+                ". Proven expertise in ",
+                "AWS, Terraform, Serverless architecture, CI/CD automation, DevOps, AI",
+                " and Development. Successfully delivered ",
+                "cloud-native solutions",
+                " across enterprise platforms at ",
+                "Cisco and Biz2X",
+                ". Recognized for deploying ",
+                "AI-driven services",
+                ", leading ",
+                "cloud migrations",
+                ", and creating impactful ",
+                "digital learning tools",
+                ". Active contributor through personal cloud projects and technical blogging at blog.omahir.com."
+            ]
+        },
+
+        // Text should be in format of array of text (broken at where you need to add link) and link objects.
+        // Link object should have url and label.
+        // This is to make sure that we can style the link differently from the rest of the text.
+        //{
+        //    text: ['Visit', ' to learn DevOps, AWS, and Vue.js.'],
+        //    link: { url: 'https://blog.omahir.com', label: 'My Blogs' },
+        //},
+    ],
+    button: {
+        label: 'Visit My LinkedIn',
+        url: 'https://www.linkedin.com/in/darshakjani8101/',
+    },
+    location: 'Pune, India',
+    availabilityStatus: 'Available'
+};
+
 export const EXTERNAL_LINKS = {
-  GITHUB: 'https://github.com/shahsagarm',
-  GITHUB_REPO: 'https://github.com/shahsagarm/omahir.dev',
-  TWITTER: 'https://twitter.com/shahsagarm',
-  FIGMA: 'https://www.figma.com/@shahsagarm',
-  INSTAGRAM: '',
-  FIGMA_FILE:
-    'https://www.figma.com/community/file/1262992249991763120/Personal-Portfolio-Website-Template-%7C-Mobile-%26-Desktop',
+    GITHUB: 'https://github.com/shahsagarm',
+    GITHUB_REPO: 'https://github.com/shahsagarm/omahir.dev',
+    TWITTER: 'https://twitter.com/shahsagarm',
+    FIGMA: 'https://www.figma.com/@shahsagarm',
+    INSTAGRAM: '',
+    FIGMA_FILE:
+        'https://www.figma.com/community/file/1262992249991763120/Personal-Portfolio-Website-Template-%7C-Mobile-%26-Desktop',
 };
 
 export const NAV_LINKS = [
-  {
-    label: 'About',
-    href: '#about',
-  },
-  {
-    label: 'Work',
-    href: '#work',
-  },
-  
-  {
-    label: 'Contact',
-    href: '#contact',
-  },
+    {
+        label: 'About',
+        href: '#about',
+    },
+    {
+        label: 'Experience',
+        href: '#experience',
+    },
+    {
+        label: 'Certifications',
+        href: '#certifications',
+    },
+    {
+        label: 'Projects',
+        href: '#work',
+    },
+    {
+        label: 'Contact',
+        href: '#contact',
+    },
 ];
 
 export const SOCIAL_LINKS = [
-  {
-    icon: Github,
-    url: 'https://github.com/omahir3010/',
-  },
-  {
-    icon: Twitter,
-    url: 'https://twitter.com/om_ahirr',
-  },
-  {
-    icon: Linkedin,
-    url: 'https://www.linkedin.com/in/om-ahir-324618218/',
-  }
-  
+    {
+        icon: Github,
+        url: 'https://github.com/darshakjani8101',
+    },
+    //{
+    //    icon: Twitter,
+    //    url: 'https://twitter.com/om_ahirr',
+    //},
+    {
+        icon: Linkedin,
+        url: 'https://www.linkedin.com/in/darshakjani8101/',
+    }
+
 ];
 
 export const TECHNOLOGIES: TechDetails[] = [
-  {
-    label: 'Javascript',
-    logo: LogoJavascript,
-    url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-  },
-  {
-    label: 'Typescript',
-    logo: LogoTypescript,
-    url: 'https://www.typescriptlang.org/',
-  },
-  {
-    label: 'Vue.js/Vue3',
-    logo: LogoReact,
-    url: 'https://vuejs.org/',
-  },
-  {
-    label: 'Node.js',
-    logo: LogoNodejs,
-    url: 'https://nodejs.org/en',
-  },
-  {
-    label: 'Express.js',
-    logo: LogoExpress,
-    darkModeLogo: LogoExpressLight,
-    url: 'https://expressjs.com/',
-  },
-  {
-    label: 'AWS DynamoDB',
-    logo: LogoDyanamoDB,
-    url: 'https://www.mongodb.com/',
-  },
-  {
-    label: 'Sass/Scss',
-    logo: LogoSass,
-    url: 'https://sass-lang.com/',
-  },
-  {
-    label: 'Tailwindcss',
-    logo: LogoTailwindcss,
-    url: 'https://tailwindcss.com/',
-  },
+    {
+        label: 'Javascript',
+        logo: LogoJavascript,
+        url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+    },
+    {
+        label: 'Typescript',
+        logo: LogoTypescript,
+        url: 'https://www.typescriptlang.org/',
+    },
+    {
+        label: 'Vue.js/Vue3',
+        logo: LogoReact,
+        url: 'https://vuejs.org/',
+    },
+    {
+        label: 'Node.js',
+        logo: LogoNodejs,
+        url: 'https://nodejs.org/en',
+    },
+    {
+        label: 'Express.js',
+        logo: LogoExpress,
+        darkModeLogo: LogoExpressLight,
+        url: 'https://expressjs.com/',
+    },
+    {
+        label: 'AWS DynamoDB',
+        logo: LogoDyanamoDB,
+        url: 'https://www.mongodb.com/',
+    },
+    {
+        label: 'Sass/Scss',
+        logo: LogoSass,
+        url: 'https://sass-lang.com/',
+    },
+    {
+        label: 'Tailwindcss',
+        logo: LogoTailwindcss,
+        url: 'https://tailwindcss.com/',
+    },
 
-  {
-    label: 'Storybook',
-    logo: LogoStorybook,
-    url: 'https://storybook.js.org/',
-  },
-  {
-    label: 'Git',
-    logo: LogoGit,
-    url: 'https://git-scm.com/',
-  },
-  {
-    label: 'Jenkins',
-    logo: LogoJenkins,
-    url: 'https://www.jenkins.io/',
-  },
-  {
-    label: 'Kubernetes',
-    logo: LogoKubernetes,
-    url: 'https://kubernetes.io/',
-  },
-  {
-    label: 'AWS',
-    logo: LogoAWS,
-    darkModeLogo: LogoAWSLight,
-    url: 'https://aws.amazon.com/',
-  },
-  {
-    label: 'Terraform',
-    logo: LogoTerraformLight,
-    darkModeLogo: LogoTerraformDark,
-    url: 'https://www.terraform.io/',
-  }
+    {
+        label: 'Storybook',
+        logo: LogoStorybook,
+        url: 'https://storybook.js.org/',
+    },
+    {
+        label: 'Git',
+        logo: LogoGit,
+        url: 'https://git-scm.com/',
+    },
+    {
+        label: 'Jenkins',
+        logo: LogoJenkins,
+        url: 'https://www.jenkins.io/',
+    },
+    {
+        label: 'Kubernetes',
+        logo: LogoKubernetes,
+        url: 'https://kubernetes.io/',
+    },
+    {
+        label: 'AWS',
+        logo: LogoAWS,
+        darkModeLogo: LogoAWSLight,
+        url: 'https://aws.amazon.com/',
+    },
+    {
+        label: 'Terraform',
+        logo: LogoTerraformLight,
+        darkModeLogo: LogoTerraformDark,
+        url: 'https://www.terraform.io/',
+    }
 ];
 
 export const EXPERIENCES: ExperienceDetails[] = [
-  {
-    logo: LogoPersistentLight,
-    darkModeLogo: LogoPersistent,
-    logoAlt: 'Persistent Systems',
-    position: 'Software Engineer (Cisco)',
-    startDate: new Date(2022, 5),
-    currentlyWorkHere: true,
-    summary: ['Worked as a Intern (VueJs, TailwindCSS , NodeJs/ExpressJs).'],
-    projectdata: [
-      {
-        name: 'CISCO U',
-        description: [
-          `Built a Cisco's digital learning experience using Vue.js and Tailwind CSS which can guide learners
+    {
+        logo: LogoPersistentLight,
+        darkModeLogo: LogoPersistent,
+        logoAlt: 'Persistent Systems',
+        position: 'Software Engineer (Cisco)',
+        startDate: new Date(2022, 5),
+        currentlyWorkHere: true,
+        summary: ['Worked as a Intern (VueJs, TailwindCSS , NodeJs/ExpressJs).'],
+        projectdata: [
+            {
+                name: 'CISCO U',
+                description: [
+                    `Built a Cisco's digital learning experience using Vue.js and Tailwind CSS which can guide learners
           to the right role or solution, helping them grow their skills, to accelerate their business
           transformation.`,
-          `Implemented Manage Licences Functionality and Manage Entitlements Functionality for Cisco U.
+                    `Implemented Manage Licences Functionality and Manage Entitlements Functionality for Cisco U.
           and Cisco U Admin. Proficient in Vue3, VueJs, TailwindCSS, Storybook and Figma.`,
-          `Established a table structure within the Cisco Admin application to oversee the
+                    `Established a table structure within the Cisco Admin application to oversee the
           administration of rules for managing Cisco Certification Badge through the Credly
           API.
           `
-        ],
-        technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
-      },
-      {
-        name: `Cisco's E-Service Training`,
-        description: [
-          `Developed an E-Service Training site, offering essential resources for Cisco's Third-Party
+                ],
+                technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
+            },
+            {
+                name: `Cisco's E-Service Training`,
+                description: [
+                    `Developed an E-Service Training site, offering essential resources for Cisco's Third-Party
           Maintainer Field Engineers, referred to as 'FieldX.`,
-          `Developed an E-Service Training site, offering essential resources for Cisco's ThirdParty Maintainer Field Engineers, referred to as 'FieldX.' Employed AWS CloudFront
+                    `Developed an E-Service Training site, offering essential resources for Cisco's ThirdParty Maintainer Field Engineers, referred to as 'FieldX.' Employed AWS CloudFront
           for efficient content distribution and AWS S3 for serving static content.`,
-          `Successfully transitioned a Monolith Application to a Serverless Architecture on
+                    `Successfully transitioned a Monolith Application to a Serverless Architecture on
           AWS, encompassing the migration of Elastic File Storage (EFS) to S3 through
           DataSync, the transfer of Relational Database Service (RDS) to DynamoDB using
           Database Migration Service, and the migration of CICD processes from Jenkins to
           AWS Developer tools such as CodeBuild, CodePipeline, and CodeDeploy.`,
-          ` Employed AWS CloudFront for efficient content distribution and AWS S3 for serving static content.`,
-          `Migrated Cisco's FieldX CI/CD from Jenkins to AWS CodeBuild and AWS CodePipeline for
+                    ` Employed AWS CloudFront for efficient content distribution and AWS S3 for serving static content.`,
+                    `Migrated Cisco's FieldX CI/CD from Jenkins to AWS CodeBuild and AWS CodePipeline for
           Orchestration.`,
-          `Implemented Recent Offering feature End to End which shows recently added Categories in the
+                    `Implemented Recent Offering feature End to End which shows recently added Categories in the
           FieldX Application.`,
-          `Implemented AWS Cognito for authentication and seamlessly integrated it with Cisco's OKTA,
+                    `Implemented AWS Cognito for authentication and seamlessly integrated it with Cisco's OKTA,
           ensuring OAUTH2 compatibility.`,
-          `Built an API with API Gateway and Lambda to retrieve training categories from
+                    `Built an API with API Gateway and Lambda to retrieve training categories from
           DynamoDB using NodeJs and ExpressJs.`,
-          `Updated BatchItems in DynamoDB for multiple Remedial Procedures in EST
+                    `Updated BatchItems in DynamoDB for multiple Remedial Procedures in EST
           Applications using DynamoDB and AWS SDK.`
-        ],
-        technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
-      },
-      {
-        name: `Cisco's E-Service Training Admin`,
-        description: [
-          `Build a FieldX Admin “End-to-End” Application which will perform Operations for the management of E-
+                ],
+                technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
+            },
+            {
+                name: `Cisco's E-Service Training Admin`,
+                description: [
+                    `Build a FieldX Admin “End-to-End” Application which will perform Operations for the management of E-
           Service Training Categories Contents and Products by Admin Users and Third Party Venders.`
-        ],
-        technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
-      },
-      {
-        name: `Cisco's Learning Network Space`,
-        description: [
-          `Effectively migrated Cisco's Learning Space documentation page from Cisco's DevNet Site to
+                ],
+                technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
+            },
+            {
+                name: `Cisco's Learning Network Space`,
+                description: [
+                    `Effectively migrated Cisco's Learning Space documentation page from Cisco's DevNet Site to
           Cisco's Learning Space Application, converting markdown files to HTML and deploying the updated
           version in a production environment.`
-        ],
-        technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
-      },
-      {
-        name: `Cisco's E-Reader Application`,
-        description: [
-          `Engineered an advanced tool for Cisco's E-Reader Application, empowering users to seamlessly
+                ],
+                technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
+            },
+            {
+                name: `Cisco's E-Reader Application`,
+                description: [
+                    `Engineered an advanced tool for Cisco's E-Reader Application, empowering users to seamlessly
           highlight text and add annotations`
-        ],
-        technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
-      }
-    ]
-  },
-  {
-    logo: LogoPersistentLight,
-    darkModeLogo: LogoPersistent,
-    logoAlt: 'persistent logo',
-    position: 'Intern',
-    startDate: new Date(2022, 0),
-    endDate: new Date(2022, 5),
-    summary: ['Worked as a Intern (VueJs, TailwindCSS , NodeJs/ExpressJs).'],
-    projectdata: [
-      {
-        name: 'Cisco POC',
-        description: [
-          'Worked as a Intern (VueJs, TailwindCSS , NodeJs/ExpressJs).'
-        ],
-        technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
-      }
-    ]
-  },
+                ],
+                technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
+            }
+        ]
+    },
+    {
+        logo: LogoPersistentLight,
+        darkModeLogo: LogoPersistent,
+        logoAlt: 'persistent logo',
+        position: 'Intern',
+        startDate: new Date(2022, 0),
+        endDate: new Date(2022, 5),
+        summary: ['Worked as a Intern (VueJs, TailwindCSS , NodeJs/ExpressJs).'],
+        projectdata: [
+            {
+                name: 'Cisco POC',
+                description: [
+                    'Worked as a Intern (VueJs, TailwindCSS , NodeJs/ExpressJs).'
+                ],
+                technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
+            }
+        ]
+    },
 ];
 
 export const PROJECTS: ProjectDetails[] = [
-  {
-    name: 'Cisco U',
-    description:
-      `Cisco's digital learning experience which can guide learners to the right role or solution, helping them grow their skills, to accelerate their business transformation.`,
-    url: 'https://u.cisco.com',
-    previewImage: U,
-    technologies: [
-      'Vue3', 'Typescript', 'TailwindCSS', 'Storybook', 'Figma', 'JavaScript' , 'Circle CI'
-    ],
-  },
-  {
-    name: 'Cisco E-Service Training',
-    description:
-      'The E-Service Training site and resources support Cisco’s Third Party Maintainer Field Engineers. Quickly access Job Aid support tools like COMPASS, Mobility related Instructions, and Field Service Reference guides.',
-    url: 'https://est.cisco.com',
-    previewImage: EST,
-    technologies: [
-      'Vue3', 'PrimeVue Components','NodeJs', 'ExpressJs' ,'Tailwind CSS', 'JavaScript', 'TypeScript', 'AWS CloudFront', 'AWS EFS', 'AWS RDS', "AWS DataSync" , "AWS VPC",
-       'AWS S3', 'AWS Cognito', 'AWS Lambda', 'OAUTH2', 'AWS DynamoDB', 'AWS API Gateway', 'AWS CodeBuild', 'AWS CodePipeline'
-    ],
-  }
+    {
+        name: 'Cisco U',
+        description:
+            `Cisco's digital learning experience which can guide learners to the right role or solution, helping them grow their skills, to accelerate their business transformation.`,
+        url: 'https://u.cisco.com',
+        previewImage: U,
+        technologies: [
+            'Vue3', 'Typescript', 'TailwindCSS', 'Storybook', 'Figma', 'JavaScript', 'Circle CI'
+        ],
+    },
+    {
+        name: 'Cisco E-Service Training',
+        description:
+            'The E-Service Training site and resources support Cisco’s Third Party Maintainer Field Engineers. Quickly access Job Aid support tools like COMPASS, Mobility related Instructions, and Field Service Reference guides.',
+        url: 'https://est.cisco.com',
+        previewImage: EST,
+        technologies: [
+            'Vue3', 'PrimeVue Components', 'NodeJs', 'ExpressJs', 'Tailwind CSS', 'JavaScript', 'TypeScript', 'AWS CloudFront', 'AWS EFS', 'AWS RDS', "AWS DataSync", "AWS VPC",
+            'AWS S3', 'AWS Cognito', 'AWS Lambda', 'OAUTH2', 'AWS DynamoDB', 'AWS API Gateway', 'AWS CodeBuild', 'AWS CodePipeline'
+        ],
+    }
 ];
 
-export const TESTIMONIALS: TestimonialDetails[] = [
-  
- 
-];
+export const TESTIMONIALS: TestimonialDetails[] = [];

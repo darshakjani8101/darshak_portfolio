@@ -18,10 +18,11 @@ import ThemeSwitcher from '@/components/general/theme-switcher';
 import IconButton from '@/components/general/icon-button';
 import DownloadCV from '@/components/general/download-cv';
 import Typography from '@/components/general/typography';
+import { LOGO_TEXT } from '@/lib/data';
 
 const Logo = () => (
   <Typography variant="h3" className="font-bold">
-    {'<OA />'}
+    {LOGO_TEXT}
   </Typography>
 );
 
