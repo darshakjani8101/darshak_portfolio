@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 73 73" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(2.000000, 2.000000)" fill="#FFFFFF" fill-rule="nonzero" stroke="#0A0A0A" stroke-width="2">
+            <rect x="-1" y="-1" width="71" height="71" rx="14"/>
+        </g>
+        <g transform="translate(22.000000, 11.000000)" fill="#000000" fill-rule="nonzero">
+            <polygon points="14.7809081 0 0 8.45050462 0 42.2525249 14.7809081 50.7030295 14.7809081 33.8020194 29.561837 25.3515148 14.7809081 16.9010101 29.561837 8.45050462"/>
+        </g>
+    </g>
+</svg>

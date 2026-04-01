@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="64" height="64" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <title>ServiceNow</title>
+  <g>
+    <!-- Background -->
+    <!-- <rect width="48" height="48" rx="4" fill="white"/> -->
+    
+    <!-- ServiceNow Brand Color Background -->
+    <rect x="6" y="6" width="36" height="36" rx="2" fill="#62D84E"/>
+    
+    <!-- Ticket Icon -->
+    <g transform="translate(24, 24)">
+      <!-- Ticket Body -->
+      <rect x="-10" y="-8" width="20" height="16" rx="1.5" fill="white"/>
+      
+      <!-- Ticket Notches -->
+      <circle cx="-10" cy="0" r="2" fill="#62D84E"/>
+      <circle cx="10" cy="0" r="2" fill="#62D84E"/>
+      
+      <!-- Ticket Details (lines) -->
+      <line x1="-6" y1="-4" x2="6" y2="-4" stroke="#62D84E" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="-6" y1="0" x2="6" y2="0" stroke="#62D84E" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="-6" y1="4" x2="2" y2="4" stroke="#62D84E" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

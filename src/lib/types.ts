@@ -38,3 +38,10 @@ export type TestimonialDetails = {
   testimonial: string;
   title: string;
 };
+
+export type AboutMeDetails = {
+  title: string;
+  paragraphs: string[];
+  quickBitsTitle?: string;
+  quickBits?: string[];
+};

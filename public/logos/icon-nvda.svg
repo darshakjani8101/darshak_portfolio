@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="64" height="64" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <title>NVDA Screen Reader</title>
+  <defs>
+    <linearGradient id="nvdaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A5FD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <g>
+    <!-- Background -->
+    <!-- <rect width="48" height="48" rx="4" fill="white"/> -->
+    
+    <!-- NVDA Icon Design -->
+    <!-- Outer Circle -->
+    <circle cx="24" cy="24" r="24" fill="url(#nvdaGradient)"/>
+    
+    <!-- Sound Wave Lines (representing audio/screen reader) -->
+    <path d="M16 18 L16 30" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M20 15 L20 33" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M24 12 L24 36" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M28 15 L28 33" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M32 18 L32 30" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Accessibility symbol overlay (simplified) -->
+    <circle cx="24" cy="20" r="2" fill="white" opacity="0.8"/>
+    <path d="M24 23 Q26 26 24 29 Q22 26 24 23" fill="white" opacity="0.8"/>
+  </g>
+</svg>

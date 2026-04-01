@@ -1,39 +1,53 @@
 import { Github, Twitter, Linkedin } from 'lucide-react';
 
-import LogoJavascript from '/public/images/logos/icon-javascript.svg';
-import LogoTypescript from '/public/images/logos/icon-typescript.svg';
-import LogoReact from '/public/images/logos/icon-vuejs.svg';
-import LogoJenkins from '/public/images/logos/icon-jenkins.svg';
-import LogoNodejs from '/public/images/logos/icon-nodejs.svg';
-import LogoExpress from '/public/images/logos/icon-express.svg';
-import LogoExpressLight from '/public/images/logos/icon-express-light.svg';
-import LogoNest from '/public/images/logos/icon-nest.svg';
-import LogoSocket from '/public/images/logos/icon-socket.svg';
-import LogoSocketLight from '/public/images/logos/icon-socket-light.svg';
-import LogoKubernetes from '/public/images/logos/icon-kube.svg';
-import LogoMongoDB from '/public/images/logos/icon-mongodb.svg';
-import LogoSass from '/public/images/logos/icon-sass.svg';
-import LogoTailwindcss from '/public/images/logos/icon-tailwindcss.svg';
-import LogoDyanamoDB from '/public/images/logos/icon-dynamodb.svg';
-import LogoAWS from '/public/images/logos/icon-aws.svg';
-import LogoAWSLight from '/public/images/logos/icon-aws-light.svg';
-import LogoStorybook from '/public/images/logos/icon-storybook.svg';
-import LogoGit from '/public/images/logos/icon-git.svg';
-import LogoPersistent from '/public/images/logos/logo-persistent.svg';
-import LogoPersistentLight from '/public/images/logos/logo-persistent-light.svg';
-import LogoTerraformLight from '/public/images/logos/icon-terraform-light.svg';
-import LogoTerraformDark from '/public/images/logos/icon-terraform-dark.svg';
 
-import EST from '/public/images/logos/cisco-est.png';
-import U from '/public/images/logos/cisco-u.png';
+import LogoJavascript from '/public/logos/icon-javascript.svg';
+import LogoTypescript from '/public/logos/icon-typescript.svg';
+import LogoReact from '/public/logos/icon-react.svg';
+import LogoNodejs from '/public/logos/icon-nodejs.svg';
+import LogoExpress from '/public/logos/icon-express.svg';
+import LogoExpressLight from '/public/logos/icon-express-light.svg';
+import LogoMongoDB from '/public/logos/icon-mongodb.svg';
+import LogoTailwindcss from '/public/logos/icon-tailwindcss.svg';
+import LogoGit from '/public/logos/icon-git.svg';
+import LogoPersistent from '/public/logos/logo-persistent.svg';
+import LogoPersistentLight from '/public/logos/logo-persistent-light.svg';
+import LogoFluentUI from '/public/logos/icon-fluentui.svg';
+import LogoMaterialUI from '/public/logos/icon-materialui.svg';
+import LogoHtml from '/public/logos/icon-html5.svg';
+import LogoAzure from '/public/logos/icon-azure.svg';
+import LogoCICD from '/public/logos/icon-cicd.svg';
+import LogoAzureDevOps from '/public/logos/icon-azure-devops.svg';
+import LogoAccessibilityLight from '/public/logos/icon-accessibility-light.svg';
+import LogoAccessibilityDark from '/public/logos/icon-accessibility-dark.svg';
+import LogoNVDA from '/public/logos/icon-nvda.svg';
+import LogoSelenium from '/public/logos/icon-selenium.svg';
+import LogoJest from '/public/logos/icon-jest.svg';
+import LogoJWT from '/public/logos/icon-jwt.svg';
+import LogoOAuth from '/public/logos/icon-oauth.svg';
+import LogoGraphQL from '/public/logos/icon-graphql.svg';
+import LogoCSharp from '/public/logos/icon-csharp.svg';
+import LogoDotNet from '/public/logos/icon-dotnet.svg';
+import LogoPython from '/public/logos/icon-python.svg';
+import LogoPLSQL from '/public/logos/icon-plsql.svg';
+import LogoOracleDB from '/public/logos/icon-oracledb.svg';
+import LogoPostgreSQL from '/public/logos/icon-postgresql.svg';
+import LogoInformatica from '/public/logos/icon-informatica.svg';
+import LogoServiceNow from '/public/logos/icon-servicenow.svg';
+import LogoGithubCopilot from '/public/logos/icon-github.svg';
+
+import EST from '/public/logos/cisco-est.png';
+import U from '/public/logos/cisco-u.png';
 
 import headShot from '/public/images/front-pic.jpg';
+import coverPicture from '/public/images/pic.jpg';
 
 import {
     ExperienceDetails,
     ProjectDetails,
     TechDetails,
     TestimonialDetails,
+    AboutMeDetails,
 } from '@/lib/types';
 
 export const LOGO_TEXT = '<DJ />';
@@ -54,6 +68,7 @@ export const SITE_METADATA = {
 export const FILE_URLS = {
     resume: 'files/Darshak-Jani-Resume.pdf',
     headShot: headShot,
+    coverPicture: coverPicture,
 };
 
 export const HERO_CONTENT = {
@@ -112,6 +127,22 @@ export const EXTERNAL_LINKS = {
         'https://www.figma.com/community/file/1262992249991763120/Personal-Portfolio-Website-Template-%7C-Mobile-%26-Desktop',
 };
 
+export const ABOUT_ME: AboutMeDetails = {
+    title: 'Curious about me? Here you have it:',
+    paragraphs: [
+        'I am Darshak, a skilled professional with a diverse set of technical capabilities. With proficiency in VueJs, Vanilla Js, NodeJs, and AWS, I bring two years of valuable experience to the table. My expertise lies in the dynamic intersection of web development and DevOps, where I excel in crafting web applications with a keen eye for detail, utilizing both plain and Tailwind CSS for visually appealing user interfaces.',
+        'Throughout my career, I have actively worked with various AWS services, showcasing my comprehensive understanding of cloud architecture. From AWS CloudFront and AWS API Gateway to AWS DynamoDB, AWS CodeBuild, and AWS CodePipeline, I leverage these tools to seamlessly blend front-end development with server-side technologies. My versatility extends to Vue3, Tailwind CSS, JavaScript, AWS Cognito, OKTA, and serverless architecture, allowing me to tackle diverse challenges in the tech landscape.',
+        'A highlight of my achievements includes leveraging AWS Lambda for multiple purposes, serving as an authorizer and adeptly generating signed URLs. My familiarity with the AWS-SDK underscores my proficiency in seamlessly integrating AWS services into applications. With a two-year track record of success, I am poised to contribute my skills to innovative projects in web development, DevOps, and AWS integration.',
+    ],
+    //quickBitsTitle: 'Finally, some quick bits about me.',
+    //quickBits: [
+    //    'HashiCorp Certified: Terraform Associate',
+    //    'AWS Certified Cloud Practitioner Certified',
+    //    'AWS Certified Solutions Architect - Associate Certified',
+    //    'AZ-900: Microsoft Azure Certified',
+    //],
+};
+
 export const NAV_LINKS = [
     {
         label: 'About',
@@ -163,10 +194,20 @@ export const TECHNOLOGIES: TechDetails[] = [
         url: 'https://www.typescriptlang.org/',
     },
     {
-        label: 'Vue.js/Vue3',
+        label: 'React JS',
         logo: LogoReact,
-        url: 'https://vuejs.org/',
+        url: 'https://react.dev/',
     },
+    {
+        label: 'Fluent UI',
+        logo: LogoFluentUI,
+        url: 'https://developer.microsoft.com/en-us/fluentui',
+    },
+    {
+        label: 'Material UI',
+        logo: LogoMaterialUI,
+        url: 'https://mui.com/',
+    },    
     {
         label: 'Node.js',
         logo: LogoNodejs,
@@ -179,25 +220,19 @@ export const TECHNOLOGIES: TechDetails[] = [
         url: 'https://expressjs.com/',
     },
     {
-        label: 'AWS DynamoDB',
-        logo: LogoDyanamoDB,
+        label: 'MongoDB',
+        logo: LogoMongoDB,
         url: 'https://www.mongodb.com/',
     },
     {
-        label: 'Sass/Scss',
-        logo: LogoSass,
-        url: 'https://sass-lang.com/',
+        label: 'HTML',
+        logo: LogoHtml,
+        url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
     },
     {
-        label: 'Tailwindcss',
+        label: 'Tailwind CSS',
         logo: LogoTailwindcss,
         url: 'https://tailwindcss.com/',
-    },
-
-    {
-        label: 'Storybook',
-        logo: LogoStorybook,
-        url: 'https://storybook.js.org/',
     },
     {
         label: 'Git',
@@ -205,27 +240,101 @@ export const TECHNOLOGIES: TechDetails[] = [
         url: 'https://git-scm.com/',
     },
     {
-        label: 'Jenkins',
-        logo: LogoJenkins,
-        url: 'https://www.jenkins.io/',
+        label: 'CI/CD Pipelines',
+        logo: LogoCICD,
+        url: 'https://www.geeksforgeeks.org/devops/what-is-ci-cd/',
     },
     {
-        label: 'Kubernetes',
-        logo: LogoKubernetes,
-        url: 'https://kubernetes.io/',
+        label: 'Azure',
+        logo: LogoAzure,
+        url: 'https://azure.microsoft.com/',
+    },    
+    {
+        label: 'Azure DevOps',
+        logo: LogoAzureDevOps,
+        url: 'https://azure.microsoft.com/en-us/services/devops/',
     },
     {
-        label: 'AWS',
-        logo: LogoAWS,
-        darkModeLogo: LogoAWSLight,
-        url: 'https://aws.amazon.com/',
+        label: 'Accessibility',
+        logo: LogoAccessibilityLight,
+        darkModeLogo: LogoAccessibilityDark,
+        url: 'https://www.w3.org/WAI/',
     },
     {
-        label: 'Terraform',
-        logo: LogoTerraformLight,
-        darkModeLogo: LogoTerraformDark,
-        url: 'https://www.terraform.io/',
-    }
+        label: 'NVDA',
+        logo: LogoNVDA,
+        url: 'https://www.nvaccess.org/',
+    },
+    {
+        label: 'Selenium',
+        logo: LogoSelenium,
+        url: 'https://www.selenium.dev/',
+    },
+    {
+        label: 'Jest',
+        logo: LogoJest,
+        url: 'https://jestjs.io/',
+    },
+    {
+        label: 'JWT',
+        logo: LogoJWT,
+        url: 'https://jwt.io/',
+    },
+    {
+        label: 'OAuth',
+        logo: LogoOAuth,
+        url: 'https://oauth.net/',
+    },
+    {
+        label: 'GraphQL',
+        logo: LogoGraphQL,
+        url: 'https://graphql.org/',
+    },
+    {
+        label: 'C#',
+        logo: LogoCSharp,
+        url: 'https://docs.microsoft.com/en-us/dotnet/csharp/',
+    },
+    {
+        label: '.NET',
+        logo: LogoDotNet,
+        url: 'https://docs.microsoft.com/en-us/dotnet/',
+    },
+    {
+        label: 'Python',
+        logo: LogoPython,
+        url: 'https://www.python.org/',
+    },
+    {
+        label: 'PLSQL',
+        logo: LogoPLSQL,
+        url: 'https://www.oracle.com/database/technologies/appdev/plsql.html',
+    },
+    {
+        label: 'Oracle DB',
+        logo: LogoOracleDB,
+        url: 'https://www.oracle.com/database/',
+    },
+    {
+        label: 'PostgreSQL',
+        logo: LogoPostgreSQL,
+        url: 'https://www.postgresql.org/',
+    },
+    {
+        label: 'Informatica',
+        logo: LogoInformatica,
+        url: 'https://www.informatica.com/',
+    },
+    {
+        label: 'ServiceNow',
+        logo: LogoServiceNow,
+        url: 'https://www.servicenow.com/',
+    },
+    {
+        label: 'Github Copilot',
+        logo: LogoGithubCopilot,
+        url: 'https://github.com/features/copilot',
+    },
 ];
 
 export const EXPERIENCES: ExperienceDetails[] = [
