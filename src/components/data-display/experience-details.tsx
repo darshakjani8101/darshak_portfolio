@@ -53,7 +53,7 @@ const ExperienceDetails = ({
 
       </div>
       <div className="max-md:order-2 md:w-1/5">
-        <Typography className="text-gray-700 md:text-right">
+        <Typography className="whitespace-nowrap text-gray-700 md:text-right">
           {new Intl.DateTimeFormat('en-US', dateFormatOptions).format(
             startDate
           )}{' '}

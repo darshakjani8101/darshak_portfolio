@@ -10,8 +10,6 @@ import LogoExpressLight from '/public/logos/icon-express-light.svg';
 import LogoMongoDB from '/public/logos/icon-mongodb.svg';
 import LogoTailwindcss from '/public/logos/icon-tailwindcss.svg';
 import LogoGit from '/public/logos/icon-git.svg';
-import LogoPersistent from '/public/logos/logo-persistent.svg';
-import LogoPersistentLight from '/public/logos/logo-persistent-light.svg';
 import LogoFluentUI from '/public/logos/icon-fluentui.svg';
 import LogoMaterialUI from '/public/logos/icon-materialui.svg';
 import LogoHtml from '/public/logos/icon-html5.svg';
@@ -41,6 +39,11 @@ import U from '/public/logos/cisco-u.png';
 
 import headShot from '/public/images/front-pic.jpg';
 import coverPicture from '/public/images/pic.jpg';
+
+import LogoInfosys from '/public/logos/logo-infosys.svg';
+import LogoInfosysDark from '/public/logos/logo-infosys-dark.svg';
+import LogoTCS from '/public/logos/logo-tcs.svg';
+import LogoTCSDark from '/public/logos/logo-tcs-dark.svg';
 
 import {
     ExperienceDetails,
@@ -79,25 +82,15 @@ export const HERO_CONTENT = {
             // Even segments will be normal text and odd segments will be highlighted text.
             // This is to make sure that we can style the highlighted text differently from the rest of the text.
             text: [
-                "AI Cloud Full-Stack Engineer with ",
-                "3.6+ years",
-                " of experience building secure, scalable applications at the intersection of ",
-                "full-stack development",
+                "Frontend React Developer with ",
+                "over 5 years",
+                " of professional experience specializing in building modular and scalable frontend architectures using ",
+                "React.js, TypeScript",
                 " and ",
-                "cloud infrastructure",
-                ". Proven expertise in ",
-                "AWS, Terraform, Serverless architecture, CI/CD automation, DevOps, AI",
-                " and Development. Successfully delivered ",
-                "cloud-native solutions",
-                " across enterprise platforms at ",
-                "Cisco and Biz2X",
-                ". Recognized for deploying ",
-                "AI-driven services",
-                ", leading ",
-                "cloud migrations",
-                ", and creating impactful ",
-                "digital learning tools",
-                ". Active contributor through personal cloud projects and technical blogging at blog.omahir.com."
+                "Fluent UI",
+                `. Proven expertise in implementing Selenium automation testing in fast - paced environments. 
+                Experienced in working in an Agile development environment and passionate about delivering optimal user
+                experiences through efficient UI design and dedicated to enhancing team performance with excellent project management skills.`,                
             ]
         },
 
@@ -339,95 +332,81 @@ export const TECHNOLOGIES: TechDetails[] = [
 
 export const EXPERIENCES: ExperienceDetails[] = [
     {
-        logo: LogoPersistentLight,
-        darkModeLogo: LogoPersistent,
-        logoAlt: 'Persistent Systems',
-        position: 'Software Engineer (Cisco)',
-        startDate: new Date(2022, 5),
+        logo: LogoInfosys,
+        darkModeLogo: LogoInfosysDark,
+        logoAlt: 'Infosys logo',
+        position: 'Senior React Developer (Microsoft - CELA)',
+        startDate: new Date(2022, 10),
         currentlyWorkHere: true,
         summary: ['Worked as a Intern (VueJs, TailwindCSS , NodeJs/ExpressJs).'],
         projectdata: [
             {
-                name: 'CISCO U',
+                name: 'Microsoft StretchX',
                 description: [
-                    `Built a Cisco's digital learning experience using Vue.js and Tailwind CSS which can guide learners
-          to the right role or solution, helping them grow their skills, to accelerate their business
-          transformation.`,
-                    `Implemented Manage Licences Functionality and Manage Entitlements Functionality for Cisco U.
-          and Cisco U Admin. Proficient in Vue3, VueJs, TailwindCSS, Storybook and Figma.`,
-                    `Established a table structure within the Cisco Admin application to oversee the
-          administration of rules for managing Cisco Certification Badge through the Credly
-          API.
-          `
+                    `Developed Microsoft StretchX, a modular, scalable micro frontend architecture using React, 
+                    TypeScript, Fluent UI and Coherence Design System.`,
+                    `Implemented dynamic script execution, ensuring seamless updates and maintainability 
+                    within shell & extensions.`,
+                    `Improved performance and modularization, allowing independent deployment and 
+                    versioning of extensions.`
                 ],
                 technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
             },
             {
-                name: `Cisco's E-Service Training`,
+                name: `Dynamic Forms Renderer`,
                 description: [
-                    `Developed an E-Service Training site, offering essential resources for Cisco's Third-Party
-          Maintainer Field Engineers, referred to as 'FieldX.`,
-                    `Developed an E-Service Training site, offering essential resources for Cisco's ThirdParty Maintainer Field Engineers, referred to as 'FieldX.' Employed AWS CloudFront
-          for efficient content distribution and AWS S3 for serving static content.`,
-                    `Successfully transitioned a Monolith Application to a Serverless Architecture on
-          AWS, encompassing the migration of Elastic File Storage (EFS) to S3 through
-          DataSync, the transfer of Relational Database Service (RDS) to DynamoDB using
-          Database Migration Service, and the migration of CICD processes from Jenkins to
-          AWS Developer tools such as CodeBuild, CodePipeline, and CodeDeploy.`,
-                    ` Employed AWS CloudFront for efficient content distribution and AWS S3 for serving static content.`,
-                    `Migrated Cisco's FieldX CI/CD from Jenkins to AWS CodeBuild and AWS CodePipeline for
-          Orchestration.`,
-                    `Implemented Recent Offering feature End to End which shows recently added Categories in the
-          FieldX Application.`,
-                    `Implemented AWS Cognito for authentication and seamlessly integrated it with Cisco's OKTA,
-          ensuring OAUTH2 compatibility.`,
-                    `Built an API with API Gateway and Lambda to retrieve training categories from
-          DynamoDB using NodeJs and ExpressJs.`,
-                    `Updated BatchItems in DynamoDB for multiple Remedial Procedures in EST
-          Applications using DynamoDB and AWS SDK.`
+                    `Developed a Dynamic Forms Renderer package and published inside Microsoft’s internal 
+                    package registry, enabling various projects to render JSON-based dynamic forms.`,
+                    `Allowed applications to configure custom questions, input types, validations, and 
+                    conditional rendering through a standardized schema.`,
+                    `Ensured seamless integration with Fluent UI and enabled accessibility compliance 
+                    by implementing ARIA attributes and ensuring compatibility with screen readers like NVDA.`,
                 ],
                 technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
             },
             {
-                name: `Cisco's E-Service Training Admin`,
+                name: `Selenium Automation Test Suite`,
                 description: [
-                    `Build a FieldX Admin “End-to-End” Application which will perform Operations for the management of E-
-          Service Training Categories Contents and Products by Admin Users and Third Party Venders.`
-                ],
-                technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
-            },
-            {
-                name: `Cisco's Learning Network Space`,
-                description: [
-                    `Effectively migrated Cisco's Learning Space documentation page from Cisco's DevNet Site to
-          Cisco's Learning Space Application, converting markdown files to HTML and deploying the updated
-          version in a production environment.`
-                ],
-                technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
-            },
-            {
-                name: `Cisco's E-Reader Application`,
-                description: [
-                    `Engineered an advanced tool for Cisco's E-Reader Application, empowering users to seamlessly
-          highlight text and add annotations`
+                    `Designed and implemented a generalized Selenium automation test suite using Jest 
+                    and Node.js for various applications built with Fluent UI and Coherence Design System.`,
+                    `Created an intelligent interaction mechanism to dynamically detect and interact with 
+                    UI elements such as spinner, buttons, input fields, dropdowns, and dialogs.`,
+                    `Integrated the test suite with CI/CD pipelines in Azure DevOps, ensuring automated 
+                    testing in a headless browser environment.`
                 ],
                 technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
             }
         ]
     },
     {
-        logo: LogoPersistentLight,
-        darkModeLogo: LogoPersistent,
-        logoAlt: 'persistent logo',
-        position: 'Intern',
-        startDate: new Date(2022, 0),
-        endDate: new Date(2022, 5),
+        logo: LogoTCS,
+        darkModeLogo: LogoTCSDark,
+        logoAlt: 'TCS logo',
+        position: 'Frontend Developer (GE - Power & Renewable Energy)',
+        startDate: new Date(2019, 7),
+        endDate: new Date(2022, 10),
         summary: ['Worked as a Intern (VueJs, TailwindCSS , NodeJs/ExpressJs).'],
         projectdata: [
             {
-                name: 'Cisco POC',
+                name: 'PMO - Real Track',
                 description: [
-                    'Worked as a Intern (VueJs, TailwindCSS , NodeJs/ExpressJs).'
+                    `Designed and developed Real Track, a React.js, Redux & Material UI application to 
+                    track the complete order lifecycle of GE Power equipment.`,
+                    `Provided real-time tracking of boilers, generators, turbines and other equipment 
+                    from manufacturing to installation at customer power plants.`,
+                    `Integrated Redux state management to enhance data flow and optimize performance 
+                    for large-scale datasets.`
+                ],
+                technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
+            },
+            {
+                name: `Other Roles & Responsibilities`,
+                description: [
+                    `Worked on support projects, managing React.JS, AngularJS, Oracle PLSQL, Informatica 
+                    ETL and Java Spring Boot tasks using ServiceNow for ticketing and issue resolution.`,
+                    `Gained in-depth expertise in React.js, transitioning from support to development roles.`,
+                    `Developed problem-solving and communication skills, interacting with American & European 
+                    business owners & stakeholders to understand and refine requirements.`,
                 ],
                 technologies: ['js', 'ts', 'react', 'vue', 'nodejs', 'expressjs', 'mongodb', 'aws', 'socket.io', 'sass', 'tailwindcss', 'storybook', 'git', 'jenkins', 'kubernetes']
             }
