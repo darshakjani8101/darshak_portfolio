@@ -1,4 +1,4 @@
-import { EXPERIENCES } from '@/lib/data';
+import { EXPERIENCES, SECTION_DESCRIPTIONS } from '@/lib/data';
 import ExperienceDetails from '@/components/data-display/experience-details';
 import Tag from '@/components/data-display/tag';
 import Typography from '@/components/general/typography';
@@ -12,7 +12,7 @@ const ExperienceSection = () => {
           <Tag label="Experience" />
         </div>
         <Typography variant="subtitle" className="max-w-xl text-center">
-          Here is a quick summary of my most recent experiences:
+          {SECTION_DESCRIPTIONS.experience}
         </Typography>
       </div>
 

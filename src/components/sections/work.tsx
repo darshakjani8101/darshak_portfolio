@@ -1,4 +1,4 @@
-import { PROJECTS } from '@/lib/data';
+import { PROJECTS, SECTION_DESCRIPTIONS } from '@/lib/data';
 import ProjectDetails from '@/components/data-display/project-details';
 import Tag from '@/components/data-display/tag';
 import Typography from '@/components/general/typography';
@@ -12,7 +12,7 @@ const WorkSection = () => {
           <Tag label="Work" />
         </div>
         <Typography variant="subtitle" className="max-w-xl text-center">
-          Some of the noteworthy projects We have worked on:
+          {SECTION_DESCRIPTIONS.work}
         </Typography>
       </div>
 

@@ -11,6 +11,7 @@ import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
 import useWindowSize from '@/hooks/use-window-size';
 import { copyTextToClipboard } from '@/lib/utils';
+import { SECTION_DESCRIPTIONS } from '@/lib/data';
 
 let email = 'omahir2000@gmail.com';
 let phone = '+91 7218510795';
@@ -48,8 +49,7 @@ const ContactSection = () => {
           <Tag label="Get in touch" />
         </div>
         <Typography variant="subtitle" className="max-w-xl text-center">
-          What’s next? Feel free to reach out to me if you are looking for a
-          developer, have a query, or simply want to connect.
+          {SECTION_DESCRIPTIONS.contact}
         </Typography>
       </div>
 

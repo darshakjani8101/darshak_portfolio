@@ -1,4 +1,4 @@
-import { TECHNOLOGIES } from '@/lib/data';
+import { TECHNOLOGIES, SECTION_DESCRIPTIONS } from '@/lib/data';
 import Tag from '@/components/data-display/tag';
 import TechDetails from '@/components/data-display/tech-details';
 import Typography from '@/components/general/typography';
@@ -12,7 +12,7 @@ const SkillsSection = () => {
           <Tag label="Skills" />
         </div>
         <Typography variant="subtitle" className="max-w-xl text-center">
-          The skills, tools and technologies I am really good at:
+          {SECTION_DESCRIPTIONS.skills}
         </Typography>
       </div>
 

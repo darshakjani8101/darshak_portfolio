@@ -45,3 +45,12 @@ export type AboutMeDetails = {
   quickBitsTitle?: string;
   quickBits?: string[];
 };
+
+export type CertificationDetails = {
+  name: string;
+  organization: string;
+  description: string;
+  issueDate: Date;
+  expiryDate?: Date;
+  url?: string;
+};

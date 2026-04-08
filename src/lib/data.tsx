@@ -51,6 +51,7 @@ import {
     TechDetails,
     TestimonialDetails,
     AboutMeDetails,
+    CertificationDetails,
 } from '@/lib/types';
 
 export const LOGO_TEXT = '<DJ />';
@@ -158,6 +159,14 @@ export const NAV_LINKS = [
         href: '#contact',
     },
 ];
+
+export const SECTION_DESCRIPTIONS = {
+    skills: 'The skills, tools and technologies I am really good at.',
+    experience: 'Here is a quick summary of my most recent experiences.',
+    certifications: 'Professional certifications that validate my expertise in cloud technologies and DevOps practices.',
+    work: 'Some of the noteworthy projects We have worked on.',
+    contact: 'What\'s next? Feel free to reach out to me if you are looking for a developer, have a query, or simply want to connect.',
+};
 
 export const SOCIAL_LINKS = [
     {
@@ -435,6 +444,33 @@ export const PROJECTS: ProjectDetails[] = [
             'Vue3', 'PrimeVue Components', 'NodeJs', 'ExpressJs', 'Tailwind CSS', 'JavaScript', 'TypeScript', 'AWS CloudFront', 'AWS EFS', 'AWS RDS', "AWS DataSync", "AWS VPC",
             'AWS S3', 'AWS Cognito', 'AWS Lambda', 'OAUTH2', 'AWS DynamoDB', 'AWS API Gateway', 'AWS CodeBuild', 'AWS CodePipeline'
         ],
+    }
+];
+
+export const CERTIFICATIONS: CertificationDetails[] = [
+    {
+        name: 'Microsoft Certified: Azure AI Fundamentals',
+        organization: 'Microsoft Azure',
+        description: 'Foundational knowledge of Azure artificial intelligence concepts.',
+        issueDate: new Date(2026, 2),
+        //expiryDate: new Date(2026, 0),
+        url: 'https://learn.microsoft.com/en-us/users/darshakjani-7215/credentials/3ccf6f3e712067a2',
+    },
+    {
+        name: 'Microsoft Certified: Azure Fundamentals',
+        organization: 'Microsoft Azure',
+        description: 'Cloud architecture and Azure services expertise',
+        issueDate: new Date(2023, 0),
+        //expiryDate: new Date(2027, 0),
+        url: 'https://learn.microsoft.com/en-us/users/darshakjani-7215/credentials/21e92bc40f370293',
+    },
+    {
+        name: 'MTA: Database Fundamentals',
+        organization: 'Microsoft',
+        description: 'Database fundamentals and concepts',
+        issueDate: new Date(2016, 10),
+        //expiryDate: new Date(2027, 0),
+        url: 'https://www.credly.com/badges/765b1d52-db7a-48c9-bd3e-4aeafcbc7565/public_url',
     }
 ];
 
