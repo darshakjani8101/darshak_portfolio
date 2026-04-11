@@ -1,5 +1,7 @@
 import { Github, Twitter, Linkedin } from 'lucide-react';
 
+import headShot from '/public/images/myPics/front-pic.jpg';
+import coverPicture from '/public/images/myPics/pic.jpg';
 
 import LogoJavascript from '/public/logos/icon-javascript.svg';
 import LogoTypescript from '/public/logos/icon-typescript.svg';
@@ -34,16 +36,17 @@ import LogoInformatica from '/public/logos/icon-informatica.svg';
 import LogoServiceNow from '/public/logos/icon-servicenow.svg';
 import LogoGithubCopilot from '/public/logos/icon-github.svg';
 
-import EST from '/public/logos/cisco-est.png';
-import U from '/public/logos/cisco-u.png';
-
-import headShot from '/public/images/front-pic.jpg';
-import coverPicture from '/public/images/pic.jpg';
-
 import LogoInfosys from '/public/logos/logo-infosys.svg';
 import LogoInfosysDark from '/public/logos/logo-infosys-dark.svg';
 import LogoTCS from '/public/logos/logo-tcs.svg';
 import LogoTCSDark from '/public/logos/logo-tcs-dark.svg';
+
+import OPENAI_CHATBOT from '/public/images/projectPics/openai_chatbot.png';
+import BLOG_APP from '/public/images/projectPics/blog_app.png';
+import BRAINWAVE_UIUX from '/public/images/projectPics/brainwave_uiux.png';
+import THREED_PORTFOLIO from '/public/images/projectPics/3d_portfolio.png';
+import NIKE_LANDING from '/public/images/projectPics/nike_landing.png';
+import ECOMMERCE_APP from '/public/images/projectPics/ecommerce_app.png';
 
 import {
     ExperienceDetails,
@@ -143,6 +146,10 @@ export const NAV_LINKS = [
         href: '#about',
     },
     {
+        label: 'Skills',
+        href: '#skills',
+    },
+    {
         label: 'Experience',
         href: '#experience',
     },
@@ -152,7 +159,7 @@ export const NAV_LINKS = [
     },
     {
         label: 'Projects',
-        href: '#work',
+        href: '#projects',
     },
     {
         label: 'Contact',
@@ -164,7 +171,7 @@ export const SECTION_DESCRIPTIONS = {
     skills: 'The skills, tools and technologies I am really good at.',
     experience: 'Here is a quick summary of my most recent experiences.',
     certifications: 'Professional certifications that validate my expertise in cloud technologies and DevOps practices.',
-    work: 'Some of the noteworthy projects We have worked on.',
+    projects: 'Some of the noteworthy projects I have worked on.',
     contact: 'What\'s next? Feel free to reach out to me if you are looking for a developer, have a query, or simply want to connect.',
 };
 
@@ -425,24 +432,79 @@ export const EXPERIENCES: ExperienceDetails[] = [
 
 export const PROJECTS: ProjectDetails[] = [
     {
-        name: 'Cisco U',
+        name: 'OpenAI Chatbot',
         description:
-            `Cisco's digital learning experience which can guide learners to the right role or solution, helping them grow their skills, to accelerate their business transformation.`,
-        url: 'https://u.cisco.com',
-        previewImage: U,
+            `This is an AI Chatbot application, inspired by ChatGPT, by using MERN Stack and OpenAI.
+            It's a customized chatbot where each message of the user is stored in DB and can be retrieved and deleted.`,
+        url: 'https://openai-chatbot-bxaa.onrender.com/',
+        githubUrl: 'https://github.com/darshakjani8101/OpenAI_Chatbot',
+        previewImage: OPENAI_CHATBOT,
         technologies: [
-            'Vue3', 'Typescript', 'TailwindCSS', 'Storybook', 'Figma', 'JavaScript', 'Circle CI'
+            'MERN Stack', 'TypeScript', 'Material UI', 'JWT Tokens', 'HTTP-Only Cookies'
         ],
     },
     {
-        name: 'Cisco E-Service Training',
+        name: 'devBlogs - A Blogging Platform for Developers',
         description:
-            'The E-Service Training site and resources support Cisco’s Third Party Maintainer Field Engineers. Quickly access Job Aid support tools like COMPASS, Mobility related Instructions, and Field Service Reference guides.',
-        url: 'https://est.cisco.com',
-        previewImage: EST,
+            `This application is built using the MERN stack (MongoDB, Express.js, React.js, Node.js),
+            GraphQL, and Material UI. It provides functionalities for user authentication, creating,
+            adding, updating, and deleting blogs, as well as adding and deleting comments on blogs.`,
+        url: 'https://dev-blog-yy15.onrender.com/',
+        githubUrl: 'https://github.com/darshakjani8101/Blog_Application',
+        previewImage: BLOG_APP,
         technologies: [
-            'Vue3', 'PrimeVue Components', 'NodeJs', 'ExpressJs', 'Tailwind CSS', 'JavaScript', 'TypeScript', 'AWS CloudFront', 'AWS EFS', 'AWS RDS', "AWS DataSync", "AWS VPC",
-            'AWS S3', 'AWS Cognito', 'AWS Lambda', 'OAUTH2', 'AWS DynamoDB', 'AWS API Gateway', 'AWS CodeBuild', 'AWS CodePipeline'
+            'MERN Stack', 'TypeScript', 'Material UI', 'GraphQL'
+        ],
+    },
+    {
+        name: 'Brainwave - Modern UI/UX website',
+        description:
+            `Brainwave - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies
+            modern UI/UX principles. Its sleek design, seamless animations, and overall user experience
+            set a high standard, serving as a reference or inspiration for future modern applications or
+            websites in general.`,
+        url: 'https://brainwave-ui-ux-design.web.app/',
+        githubUrl: 'https://github.com/darshakjani8101/Brainwave_UI_UX',
+        previewImage: BRAINWAVE_UIUX,
+        technologies: [
+            'React.js', 'Vite', 'Tailwind CSS', 'UI/UX Design'
+        ],
+    },
+    {
+        name: '3D Developer Portfolio',
+        description:
+            `This project is a showcase of my skills, work experience and projects, combining the power of React,
+            Tailwind CSS, Three.js, and Framer Motion to create an immersive and visually appealing experience.`,
+        url: 'https://darshak-jani.web.app/',
+        githubUrl: 'https://github.com/darshakjani8101/3D_Developer_Portfolio',
+        previewImage: THREED_PORTFOLIO,
+        technologies: [
+            'React.js', 'Vite', 'Tailwind CSS', 'Three.js', 'React Three Fiber', 'React Three Drei', 'Email JS'
+        ],
+    },
+    {
+        name: 'Nike Landing Page',
+        description:
+            `This project is a responsive landing page inspired by Nike's sleek design, built using React.js and
+            styled with Tailwind CSS. With a focus on simplicity and elegance, this landing page aims to showcase
+            the latest products from Nike in an engaging and visually appealing manner.`,
+        //url: 'https://darshak-jani.web.app/',
+        githubUrl: 'https://github.com/darshakjani8101/nike_landing_page',
+        previewImage: NIKE_LANDING,
+        technologies: [
+            'React.js', 'Tailwind CSS'
+        ],
+    },
+    {
+        name: 'E-commerce Platform',
+        description:
+            `Explore a seamless shopping experience with intuitive UI, secure authentication, and a robust backend.
+            Shop for your favorite products, manage your cart, and checkout with ease.`,
+        //url: 'https://darshak-jani.web.app/',
+        githubUrl: 'https://github.com/darshakjani8101/mern-ecommerce-code',
+        previewImage: ECOMMERCE_APP,
+        technologies: [
+            'MERN Stack', 'Bootstrap', 'JWT Tokens', 'Braintree Payment Gateway'
         ],
     }
 ];

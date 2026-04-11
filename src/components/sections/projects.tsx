@@ -4,15 +4,15 @@ import Tag from '@/components/data-display/tag';
 import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
 
-const WorkSection = () => {
+const ProjectsSection = () => {
   return (
-    <Container id="work">
+    <Container id="projects">
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
-          <Tag label="Work" />
+          <Tag label="Projects" />
         </div>
         <Typography variant="subtitle" className="max-w-xl text-center">
-          {SECTION_DESCRIPTIONS.work}
+          {SECTION_DESCRIPTIONS.projects}
         </Typography>
       </div>
 
@@ -27,4 +27,4 @@ const WorkSection = () => {
   );
 };
 
-export default WorkSection;
+export default ProjectsSection;
