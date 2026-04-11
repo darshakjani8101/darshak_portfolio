@@ -11,10 +11,7 @@ import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
 import useWindowSize from '@/hooks/use-window-size';
 import { copyTextToClipboard } from '@/lib/utils';
-import { SECTION_DESCRIPTIONS } from '@/lib/data';
-
-let email = 'omahir2000@gmail.com';
-let phone = '+91 7218510795';
+import { SECTION_DESCRIPTIONS, CONTACT_INFO } from '@/lib/data';
 
 type CopyValue = 'email' | 'phone';
 
@@ -57,12 +54,12 @@ const ContactSection = () => {
         <div className="flex flex-col items-center md:gap-4">
           <div className="flex items-center gap-4 md:gap-5">
             <Mail className="h-6 w-6 md:h-8 md:w-8" />
-            {/* <Link href={`mailto:${email}`}> */}
-            <Typography variant="h2">{email}</Typography>
+            {/* <Link href={`mailto:${CONTACT_INFO.email}`}> */}
+            <Typography variant="h2">{CONTACT_INFO.email}</Typography>
             {/* </Link> */}
             <IconButton
               size={width && width < 768 ? 'md' : 'lg'}
-              onClick={() => handleCopyClick(email, 'email')}
+              onClick={() => handleCopyClick(CONTACT_INFO.email, 'email')}
               showTooltip={isCopied && copiedValueType === 'email'}
               tooltipText="Copied!"
             >
@@ -71,12 +68,12 @@ const ContactSection = () => {
           </div>
           <div className="flex items-center gap-4 md:gap-5">
             <Phone className="h-6 w-6 md:h-8 md:w-8" />
-            {/* <Link href={`tel:${phone.replace(' ', '')}`}> */}
-            <Typography variant="h2">{phone}</Typography>
+            {/* <Link href={`tel:${CONTACT_INFO.phone.replace(' ', '')}`}> */}
+            <Typography variant="h2">{CONTACT_INFO.phone}</Typography>
             {/* </Link> */}
             <IconButton
               size={width && width < 768 ? 'md' : 'lg'}
-              onClick={() => handleCopyClick(phone.replace(' ', ''), 'phone')}
+              onClick={() => handleCopyClick(CONTACT_INFO.phone.replace(' ', ''), 'phone')}
               showTooltip={isCopied && copiedValueType === 'phone'}
               tooltipText="Copied!"
             >

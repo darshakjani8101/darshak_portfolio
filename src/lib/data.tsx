@@ -191,6 +191,11 @@ export const SOCIAL_LINKS = [
 
 ];
 
+export const CONTACT_INFO = {
+    email: 'darshakjani8101@gmail.com',
+    phone: '+91 9016178101',
+};
+
 export const TECHNOLOGIES: TechDetails[] = [
     {
         label: 'Javascript',
