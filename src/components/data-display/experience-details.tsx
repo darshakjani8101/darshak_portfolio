@@ -36,18 +36,18 @@ const ExperienceDetails = ({
 
 
         {projectdata?.map((project, index) => (
-          <><Typography key={index}>
-            <h2 className='font-bold m-1 my-3'>
+          <div key={index}>
+            <h2 className='font-bold m-1 my-3 text-gray-900'>
               {project.name}
             </h2>
             <ul className="flex list-disc flex-col gap-2 md:gap-1">
-              {project.description?.map((description, index) => (
-                <Typography component="li" key={index}>
+              {project.description?.map((description, descIndex) => (
+                <Typography component="li" key={descIndex}>
                   {description}
                 </Typography>
               ))}
             </ul>
-          </Typography></>
+          </div>
         ))}
 
 

@@ -1,16 +1,16 @@
-<h1 align="center">
-  omahir.dev
-</h1>
-<p align="center">
-  My portfolio website built with <a href="https://nextjs.org" target="_blank">Next.js</a>, <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>, <a href="https://www.radix-ui.com" target="_blank">Radix UI</a> and deployed on <a href="https://www.netlify.com/" target="_blank">Vercel</a>.⚡
-</p>
+<div align="center">
+  <br />
+      <img src="https://github.com/darshakjani8101/darshak_portfolio/blob/main/public/images/readMePics/readme_img.png" alt="Project Banner">
+  <br />
+</div>
 
-![preview](https://raw.githubusercontent.com/shahsagarm/omahir.dev/main/thumbnail.png)
+# darshakjani.dev
+My portfolio website built with <a href="https://nextjs.org" target="_blank">Next.js</a>, <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>, <a href="https://www.radix-ui.com" target="_blank">Radix UI</a> and deployed on <a href="https://www.netlify.com/" target="_blank">Vercel</a>.⚡
 
 ## Tech Stack
 
 - [Next.js](https://nextjs.org) - React framework for building performant apps with the best developer experience
-- [TypeScript](https://typescriptlang.org) - Static type checker for end-to-end typesafety
+- [TypeScript](https://typescriptlang.org) - Static type checker for end-to-end type safety
 - [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework for rapid UI development
 - [Radix UI](https://www.radix-ui.com/) - Primitives like drawer, button, etc. to build a stellar user experience
 - [Lucide Icons](https://lucide.dev) - Beautifully simple, pixel-perfect icons
@@ -19,8 +19,8 @@
 ## Running Locally
 
 ```bash
-$ git clone https://github.com/shahsagarm/omahir.dev.git
-$ cd omahir.dev
+$ git clone https://github.com/darshakjani8101/darshak_portfolio.git
+$ cd darshak_portfolio
 $ npm install
 $ npm run dev
 ```
