@@ -7,6 +7,8 @@
 # darshakjani.dev
 My portfolio website built with <a href="https://nextjs.org" target="_blank">Next.js</a>, <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>, <a href="https://www.radix-ui.com" target="_blank">Radix UI</a> and deployed on <a href="https://www.netlify.com/" target="_blank">Vercel</a>.⚡
 
+![preview](https://github.com/darshakjani8101/darshak_portfolio/blob/main/public/images/readMePics/thumbnail.png)
+
 ## Tech Stack
 
 - [Next.js](https://nextjs.org) - React framework for building performant apps with the best developer experience
