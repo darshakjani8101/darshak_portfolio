@@ -18,6 +18,10 @@ My portfolio website built with <a href="https://nextjs.org" target="_blank">Nex
 - [Lucide Icons](https://lucide.dev) - Beautifully simple, pixel-perfect icons
 - [Next Themes](https://github.com/pacocoursey/next-themes) - An abstraction for themes (Dark + Light Mode).
 
+## Hosted Portfolio
+You can access the hosted portfolio at https://darshakjani.netlify.app/
+- Initial loading could take up to 1 minute as it's hosted on a free hosting service of <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
+
 ## Running Locally
 
 ```bash

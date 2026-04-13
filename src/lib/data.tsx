@@ -64,7 +64,7 @@ export const LOGO_TEXT = '<DJ />';
 export const SITE_METADATA = {
     title: 'Darshak Jani | Frontend Developer From Pune, India.',
     description: 'A self-proclaimed designer who specializes in frontend development (React.js), from Pune, India.',
-    url: 'https://darshakjani.dev',
+    url: 'https://darshakjani.netlify.app',
     keywords: [
         'Frontend Developer',
         'Full Stack Developer',
