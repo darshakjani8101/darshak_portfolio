@@ -55,3 +55,11 @@ export type CertificationDetails = {
   expiryDate?: Date;
   url?: string;
 };
+
+export type HeroBioItem = {
+  text: string[];
+  link?: {
+    url: string;
+    label: string;
+  };
+};

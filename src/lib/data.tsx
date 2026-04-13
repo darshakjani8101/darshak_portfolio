@@ -1,5 +1,7 @@
 import { Github, Twitter, Linkedin } from 'lucide-react';
 
+import { HeroBioItem } from './types';
+
 import headShot from '/public/images/myPics/front-pic.jpg';
 import coverPicture from '/public/images/myPics/pic.jpg';
 
@@ -105,7 +107,7 @@ export const HERO_CONTENT = {
         //    text: ['Visit', ' to learn DevOps, AWS, and Vue.js.'],
         //    link: { url: 'https://blog.omahir.com', label: 'My Blogs' },
         //},
-    ],
+    ] as HeroBioItem[],
     button: {
         label: 'Visit My LinkedIn',
         url: 'https://www.linkedin.com/in/darshakjani8101/',
