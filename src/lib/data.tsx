@@ -89,7 +89,7 @@ export const HERO_CONTENT = {
             // This is to make sure that we can style the highlighted text differently from the rest of the text.
             text: [
                 "Frontend React Developer with ",
-                "over 5 years",
+                "over 6 years",
                 " of professional experience specializing in building modular and scalable frontend architectures using ",
                 "React.js, TypeScript",
                 " and ",
@@ -129,9 +129,9 @@ export const EXTERNAL_LINKS = {
 export const ABOUT_ME: AboutMeDetails = {
     title: 'Curious about me? Here you have it:',
     paragraphs: [
-        'I am Darshak, a skilled professional with a diverse set of technical capabilities. With proficiency in VueJs, Vanilla Js, NodeJs, and AWS, I bring two years of valuable experience to the table. My expertise lies in the dynamic intersection of web development and DevOps, where I excel in crafting web applications with a keen eye for detail, utilizing both plain and Tailwind CSS for visually appealing user interfaces.',
-        'Throughout my career, I have actively worked with various AWS services, showcasing my comprehensive understanding of cloud architecture. From AWS CloudFront and AWS API Gateway to AWS DynamoDB, AWS CodeBuild, and AWS CodePipeline, I leverage these tools to seamlessly blend front-end development with server-side technologies. My versatility extends to Vue3, Tailwind CSS, JavaScript, AWS Cognito, OKTA, and serverless architecture, allowing me to tackle diverse challenges in the tech landscape.',
-        'A highlight of my achievements includes leveraging AWS Lambda for multiple purposes, serving as an authorizer and adeptly generating signed URLs. My familiarity with the AWS-SDK underscores my proficiency in seamlessly integrating AWS services into applications. With a two-year track record of success, I am poised to contribute my skills to innovative projects in web development, DevOps, and AWS integration.',
+        'I am Darshak Jani, a passionate Frontend React Developer based in Pune, India, with over 6 years of professional experience. I specialize in building modular and scalable frontend architectures using React.js, TypeScript, and Fluent UI, ensuring optimal user experiences through efficient UI design. My journey in tech has been driven by a commitment to Agile development practices and enhancing team performance with strong project management skills.',
+        'Throughout my career, I have worked on diverse projects at leading companies like Infosys and TCS, contributing to applications for Microsoft and GE. I excel in implementing Selenium automation testing in fast-paced environments and have extensive experience with technologies such as Node.js, Express.js, MongoDB, Tailwind CSS, and Azure DevOps. My expertise spans full-stack development, accessibility compliance, and CI/CD pipelines, allowing me to deliver robust, user-friendly solutions.',
+        'A key highlight of my work includes developing micro frontend architectures, dynamic forms renderers, and automation test suites that integrate seamlessly with modern design systems. With certifications in Azure AI and Fundamentals, I am dedicated to staying at the forefront of technology. I am eager to contribute my skills to innovative projects that push the boundaries of web development and user-centric design.',
     ],
     //quickBitsTitle: 'Finally, some quick bits about me.',
     //quickBits: [
